@@ -1,0 +1,132 @@
+:root{
+  --brand: #1e293b;
+  --accent1: #22c55e;
+  --accent1b: hsl(142, 71%, 55%);
+  --whitebg: white;
+  --darkbg: black;
+}
+@font-face {
+  font-family: inter;
+  src: url("/public/Fonts/Inter-VariableFont_opsz\,wght.ttf");
+}
+@font-face {
+  font-family: roboto;
+  src: url("/public/Fonts/Roboto-VariableFont_wdth\,wght.ttf");
+}
+body{
+  margin: 0;
+  background-color: var(--whitebg);
+  height: 100%;
+  font-family: inter;
+}
+.screen{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.header{
+  display: flex;
+  padding: 0.5rem;
+  align-items: end;
+}
+.header .logo{
+  flex-grow: 1;
+  font-size: 1.5rem;
+  color: var(--brand);
+  font-weight: bold;
+}
+.header .logo:hover{
+  color: var(--accent1);
+}
+.header .links{
+  display: flex;
+  gap: 1rem;
+}
+.header a{
+  text-decoration: none;
+  color: var(--brand);
+}
+.header .icon{
+  fill: var(--brand);
+  display: none;
+}
+.hamburgerOn{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--brand);
+  align-items: end;
+  padding: 1rem;
+  gap: 1rem;
+  width: 25vw;
+  position: fixed;
+  right: 0%;
+  height: 100vh;
+  visibility: collapse;
+  transition: 0.3s;
+}
+.hamburgerOn a, .hamburgerOn .icon, .hamburgerOff .icon,.hamburgerOff a{
+  color: var(--whitebg);
+  text-decoration: none;
+}
+.hamburgerOff{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--brand);
+  align-items: end;
+  padding: 1rem;
+  gap: 1rem;
+  width: 25vw;
+  position: fixed;
+  right: -35%;
+  height: 100vh;
+  transition: 0.3s;
+}
+.hamspace{
+  width: 69vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.05);
+  display: none;
+}
+main{
+  flex-grow: 1;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  list-style:none;
+  gap: 1rem;
+  align-self: center;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.footer a{
+  color: var(--brand);
+}
+.footer .icon{
+  scale: 1.1;
+}
+.footer .icon:hover, .header a:hover,.hamburgerOn a:hover,.hamburgerOn .icon:hover{
+  scale: 1.2;
+  color: var(--accent1);
+}
+@media(max-width: 550px){
+  .header .links{
+    display: none;
+  }
+  .header .icon{
+    display: inline;
+  }
+  .hamburgerOn{
+    visibility: visible;
+  }
+  .footer .icon{
+    scale: 0.9;
+  }
+  .hamspace{
+    display: block;
+  }
+}
