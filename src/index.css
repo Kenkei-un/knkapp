@@ -24,6 +24,7 @@ body{
   flex-direction: column;
   height: 100vh;
 }
+/* header, footer, hamburger menu */
 .header{
   display: flex;
   padding: 0.5rem;
@@ -113,7 +114,94 @@ main{
   scale: 1.2;
   color: var(--accent1);
 }
+/* general components */
+button{
+  color: var(--whitebg);
+  background-color: var(--brand);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+button:hover{
+  background-color: var(--accent1);
+}
+button:active{
+  background-color: var(--accent1b);
+  scale: 1.1;
+}
+
+/* home page */
+.intro{
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: flex-start;
+  gap: 1rem;
+  justify-content: center;
+}
+.intro img{
+  width: 40%;
+  max-width: 300px;
+  border: 1px solid hsl(0, 0%, 40%);
+  border-radius: 10%;
+}
+.skillCards{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 1rem;
+}
+.skillCard{
+  border: 2px solid hsl(0, 0%, 40%);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  max-width: 350px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.skillCard p{
+  flex-grow: 1;
+}
+.skillCard .icon{
+  color: var(--brand);
+}
+.skillCard .icon:hover{
+  color: var(--accent1);
+}
+.samples{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.projectCards{
+  display: flex;
+  gap: 1rem;
+}
+.projectCard{
+    width: 40vw;
+    border: 2px solid hsl(0, 0%, 40%);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projectCard video{
+    width: 40vw;
+    border: 2px solid hsl(0, 0%, 40%);
+    border-radius: 1rem;
+  }
+
+/* mobile settings */
 @media(max-width: 550px){
+  /* header, footer, hamburger menu */
   .header .links{
     display: none;
   }
@@ -128,5 +216,30 @@ main{
   }
   .hamspace{
     display: block;
+  }
+  /* home page */
+  .intro{
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro img{
+    width: 80vw;
+  }
+  .skillCards{
+    flex-direction: column;
+    align-items: center;
+  }
+  .skillCard{
+    width: 70vw;
+  }
+  .projectCards{
+    flex-direction: column;
+    align-items: center;
+  }
+  .projectCard{
+    width: 70vw;
+  }
+  .projectCard video{
+    width: 100%;
   }
 }

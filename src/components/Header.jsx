@@ -24,10 +24,10 @@ export default function Header(){
         </div>
         <div className={hamenu?"hamburgerOn":"hamburgerOff"}>
             <X size={25} className="icon" onClick={seeMenu}/>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/CAD">CAD</NavLink>
-            <NavLink to="/playground">Playground</NavLink>
-            <NavLink to="/resume">Resume</NavLink>
+            <NavLink to="/" onClick={seeMenu}>Home</NavLink>
+            <NavLink to="/CAD" onClick={seeMenu}>CAD</NavLink>
+            <NavLink to="/playground" onClick={seeMenu}>Playground</NavLink>
+            <NavLink to="/resume" onClick={seeMenu}>Resume</NavLink>
         </div>
         {hamenu&& <div className="hamspace" onClick={seeMenu}></div>}
         </>
