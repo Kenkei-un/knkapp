@@ -221,7 +221,7 @@ button:active{
     width: 40vw;
     border: 2px solid hsl(0, 0%, 40%);
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -235,6 +235,68 @@ button:active{
   .projectCard ul{
     flex-grow: 1;
   }
+/* CAD Page */
+.CADintro{
+  padding: 0.5rem;
+}
+.CADcards{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0.5rem;
+}
+.CADcard{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3rem;
+  border-bottom: 1px solid hsl(0, 0%, 40%);
+  padding-bottom: 1rem;
+  align-items: center;
+}
+.CADcard video, .carousel img{
+  width: 50vw;
+  border: 1px solid hsl(0, 0%, 40%);
+  border-radius: 1rem;
+}
+.CADcard .skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.carousel{
+  display: flex;
+  align-items: center;
+}
+.carousel img{
+  height: 35vw;
+}
+.carousel button{
+  padding: 0.2rem;
+  background-color: var(--whitebg);
+  font-size: large;
+  color: var(--brand);
+}
+.carousel button:hover{
+  background-color: var(--accent1);
+}
+.lightboxOn{
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+.lightboxOn img{
+  border-radius: 0.5rem;
+}
+.lightboxOff{
+  display: none;
+}
 
 /* mobile settings */
 @media(max-width: 550px){
@@ -284,5 +346,19 @@ button:active{
   }
   .projectCard video{
     width: 100%;
+  }
+  /* CAD page */
+  .CADcard{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+  .CADcard video{
+    width: 80vw;
+  }
+  .carousel img{
+    width: 80vw;
+    height: 50vw;
   }
 }

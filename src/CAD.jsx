@@ -1,6 +1,97 @@
+import Slider from "./Tools/Slider";
+
 export default function CAD(){
+    const spoon=[
+        {image:'/public/projects/spoon.JPG', text:'CAD Spoon'},
+        {image:'/public/projects/realSpoon.jpg', text:'Real Spoon'},
+        {image:'/public/projects/spoon2D.JPG', text:'2D Drawing'}
+    ];
     return(
         <>
-        <p>CAD</p></>
+        <section className="CADintro">
+            <h2>CAD Designs</h2>
+            <p>The following CAD designs were made on SOLIDWORKS. I am familiar with SOLIDWORKS, AutoDesk Inventor and AutoCAD</p>
+        </section>
+        <section className="CADcards">
+            <div className="CADcard">
+                <div>
+                <h3>Electrical Enclosure</h3>
+                <video src="/projects/Electrical Enclosure.mp4" controls></video>
+                </div>
+                <div>
+                    <strong>Skills</strong>
+                    <ul>
+                        <li>Sheet Metal Tools: Flange, Vents, Forming Tools, Bends</li>
+                        <li>Solidworks Toolbox</li>
+                        <li>Assembly with mates</li>
+                        <li>Motion Study</li>
+                    </ul>
+                </div>
+            </div>
+            <div className="CADcard">
+                <div>
+                <h3>Torch Reverse Engineering</h3>
+                <video src="/projects/Torch Assembly.mp4" controls></video>
+                </div>
+                <div className="skills">
+                    <strong>Skills</strong>
+                    <ul>
+                        <li>Reverse Engineering</li>
+                        <li>Assembly with mates</li>
+                        <li>Exploded View</li>
+                        <li>Assign Material and appearance</li>
+                        <li>Animation</li>
+                        <li>Extrusion, Revolve, Fillet</li>
+                        <li>Surface Modelling</li>
+                    </ul>
+                </div>
+            </div>
+            <div className="CADcard">
+                <div>
+                <h3>Fan Assembly</h3>
+                <video src="/projects/Fan assembly.mp4" controls></video>
+                </div>
+                <div className="skills">
+                    <strong>Skills</strong>
+                    <ul>
+                        <li>Assembly with mates</li>
+                        <li>Assign Material and appearance</li>
+                        <li>Extrusion, Revolve, Fillet, Sweep</li>
+                        <li>Circular Pattern</li>
+                        <li>Motion study: motor, contacts</li>
+                    </ul>
+                </div>
+            </div>
+            <div className="CADcard">
+                <div>
+                <h3>Gearbox Assembly</h3>
+                <video src="/projects/Gearbox Assembly.mp4" controls></video>
+                </div>
+                <div className="skills">
+                    <strong>Skills</strong>
+                    <ul>
+                        <li>Assembly with mates</li>
+                        <li>SOLIDWORKS Toolbox</li>
+                        <li>Exploded View</li>
+                        <li>Motion study: motor, contacts</li>
+                    </ul>
+                </div>
+            </div>
+            <div className="CADcard">
+                <div>
+                <h3>Spoon</h3>
+                <Slider slides={spoon}/>
+                </div>
+                <div>
+                    <strong>Skills</strong>
+                    <ul>
+                        <li>Surface Modelling</li>
+                        <li>2D drawing from 3D model</li>
+                        <li>Dimensioning</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        </>
     );
 }
