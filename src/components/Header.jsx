@@ -17,7 +17,8 @@ export default function Header(){
         <div className="links">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/CAD">CAD</NavLink>
-            <NavLink to="/playground">Playground</NavLink>
+            <NavLink to="/webdev">Webdev</NavLink>
+            <NavLink to="/speaking">Speaking</NavLink>
             <NavLink to="/resume">Resume</NavLink>
         </div>
         {!hamenu&&<GiHamburgerMenu size={30} className="icon" onClick={seeMenu}/>}
@@ -26,7 +27,8 @@ export default function Header(){
             <X size={25} className="icon" onClick={seeMenu}/>
             <NavLink to="/" onClick={seeMenu}>Home</NavLink>
             <NavLink to="/CAD" onClick={seeMenu}>CAD</NavLink>
-            <NavLink to="/playground" onClick={seeMenu}>Playground</NavLink>
+            <NavLink to="/webdev" onClick={seeMenu}>Webdev</NavLink>
+            <NavLink to="/speaking" onClick={seeMenu}>Speaking</NavLink>
             <NavLink to="/resume" onClick={seeMenu}>Resume</NavLink>
         </div>
         {hamenu&& <div className="hamspace" onClick={seeMenu}></div>}

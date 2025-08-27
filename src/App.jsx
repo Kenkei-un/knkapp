@@ -2,9 +2,10 @@ import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./Home";
-import Playground from "./Playground";
 import CAD from "./CAD";
 import Resume from "./Resume";
+import Webdev from "./Webdev";
+import Speaking from "./Speaking";
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/CAD" element={<CAD />} />
-            <Route path="/playground" element={<Playground/>}/>
+            <Route path="/webdev" element={<Webdev />} />
+            <Route path="/speaking" element={<Speaking />} />
             <Route path="/resume" element={<Resume/>}/>
             <Route path="/*" element={<Home/>} />
           </Routes>

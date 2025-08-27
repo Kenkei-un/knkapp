@@ -1,8 +1,10 @@
 import { FaDesktop } from "react-icons/fa";
 import { IoPodium } from "react-icons/io5";
 import { RxGear } from "react-icons/rx";
+import { useNavigate } from "react-router-dom";
 
 export default function Home(){
+    const navigate=useNavigate();
     return(
         <>
         <section className="intro">
@@ -18,19 +20,19 @@ export default function Home(){
                 <RxGear size={40} className="icon"/>
                 <strong>Mechanical Engineering</strong>
                 <p>CAD, HVAC, Energy, Maintenance Engineering</p>
-                <button>View Designs</button>                 
+                <button onClick={()=>navigate('/CAD')}>View Designs</button>                 
             </div>
             <div className="skillCard">
                 <FaDesktop size={40}  className="icon"/>
                 <strong>Web Development</strong>
                 <p>HTML, CSS, Javascript, MERN stack</p>
-                <button>View Work</button>                 
+                <button onClick={()=>navigate('/webdev')}>View Work</button>                 
             </div>
             <div className="skillCard">
                 <IoPodium size={40} className="icon"/>
                 <strong>Speaking</strong>
                 <p>Public Speaking, Debate</p>
-                <button>View Accolades</button>                 
+                <button  onClick={()=>navigate('/speaking')}>View Accolades</button>                 
             </div>
         </section>
         <section className="samples">
@@ -45,6 +47,7 @@ export default function Home(){
                         <li>Assembly</li>
                         <li>Animation</li>
                     </ul>
+                    <button onClick={()=>navigate('/CAD')}>View More CAD designs</button>
                 </div>
                 <div className="projectCard">
                     <h2>JDS Web</h2>
@@ -55,6 +58,7 @@ export default function Home(){
                         <li>Quick loading via REACT</li>
                         <li>Intuintive User Experience-UI/UX optimization</li>
                     </ul>
+                    <button  onClick={()=>navigate('/webdev')}>View More WebDev Projects</button>
                 </div>
             </div>
         </section>

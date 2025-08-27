@@ -13,6 +13,21 @@
   font-family: roboto;
   src: url("/public/Fonts/Roboto-VariableFont_wdth\,wght.ttf");
 }
+/* Animation */
+@keyframes section-in{
+  from{opacity: 0; transform: translateY(100%);}
+  to{opacity: 1; transform: translateX(0);}
+}
+@keyframes skill{
+  from{opacity: 0; transform: rotateX(360deg);}
+  from{opacity: 1; transform: rotateX(0deg);}
+}
+@keyframes glow{
+  50%{color: var(--accent1);}
+}
+section{
+  animation: section-in 1.5s;
+}
 body{
   margin: 0;
   background-color: var(--whitebg);
@@ -35,6 +50,7 @@ body{
   font-size: 1.5rem;
   color: var(--brand);
   font-weight: bold;
+  animation: glow 3s;
 }
 .header .logo:hover{
   color: var(--accent1);
@@ -163,6 +179,7 @@ button:active{
   max-width: 350px;
   text-align: center;
   box-sizing: border-box;
+  animation: skill 5s;
 }
 .skillCard p{
   flex-grow: 1;
@@ -194,9 +211,12 @@ button:active{
     align-items: center;
   }
   .projectCard video{
-    width: 40vw;
+    width: 100%;
     border: 2px solid hsl(0, 0%, 40%);
     border-radius: 1rem;
+  }
+  .projectCard ul{
+    flex-grow: 1;
   }
 
 /* mobile settings */
