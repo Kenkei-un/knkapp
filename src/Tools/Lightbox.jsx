@@ -6,7 +6,7 @@ export default function Lightbox({image, view, setView}){
     }
 
     return(
-        <div className={view?"lightboxOff":"lightboxOn"} onClick={toggleView}>
+        <div className={view?"lightboxOn":"lightboxOff"} onClick={toggleView}>
             <img src={image} alt="image"/>
         </div>
     );
