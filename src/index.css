@@ -7,11 +7,11 @@
 }
 @font-face {
   font-family: inter;
-  src: url("/public/Fonts/Inter-VariableFont_opsz\,wght.ttf");
+  src: url("Fonts/Inter-VariableFont_opsz\,wght.ttf");
 }
 @font-face {
   font-family: roboto;
-  src: url("/public/Fonts/Roboto-VariableFont_wdth\,wght.ttf");
+  src: url("Fonts/Roboto-VariableFont_wdth\,wght.ttf");
 }
 /* Animation */
 @keyframes section-in{
@@ -167,6 +167,7 @@ button:active{
   flex-direction: row;
   gap: 1rem;
   margin: 1rem;
+  justify-content: center;
 }
 .skillCard{
   border: 2px solid hsl(0, 0%, 40%);
