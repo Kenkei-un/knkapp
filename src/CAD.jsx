@@ -2,9 +2,9 @@ import Slider from "./Tools/Slider";
 
 export default function CAD(){
     const spoon=[
-        {image:'/public/projects/spoon.JPG', text:'CAD Spoon'},
-        {image:'/public/projects/realSpoon.jpg', text:'Real Spoon'},
-        {image:'/public/projects/spoon2D.JPG', text:'2D Drawing'}
+        {image:'/projects/spoon.JPG', text:'CAD Spoon'},
+        {image:'/projects/realSpoon.jpg', text:'Real Spoon'},
+        {image:'/projects/spoon2D.JPG', text:'2D Drawing'}
     ];
     return(
         <>
