@@ -44,6 +44,8 @@ body{
   display: flex;
   padding: 0.5rem;
   align-items: end;
+  border-bottom: 1px solid var(--brand);
+  margin-bottom: 1rem;
 }
 .header .logo{
   flex-grow: 1;
@@ -51,10 +53,19 @@ body{
   color: var(--brand);
   font-weight: bold;
   animation: glow 3s;
+  justify-items: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
 }
 .header .logo:hover{
   color: var(--accent1);
 }
+.header img{
+  width: 3rem;
+  height: 3rem;
+} 
 .header .links{
   display: flex;
   gap: 1rem;
@@ -117,8 +128,13 @@ main{
   gap: 1rem;
   align-self: center;
   align-items: center;
+  justify-content: center;
   padding-left: 1rem;
   padding-right: 1rem;
+  border: 2px solid hsl(0, 0%, 40%);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin-bottom: 0.2rem;
 }
 .footer a{
   color: var(--brand);
@@ -234,6 +250,12 @@ button:active{
   }
   .footer .icon{
     scale: 0.9;
+  }
+  .footer{
+    border: none;
+    border-top: 1px solid var(--brand);
+    border-radius: 0;
+    padding-bottom: 0.5rem;
   }
   .hamspace{
     display: block;

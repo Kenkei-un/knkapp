@@ -23,9 +23,9 @@ function App() {
             <Route path="/resume" element={<Resume/>}/>
             <Route path="/*" element={<Home/>} />
           </Routes>
-        </main>  
+        </main>
+      <Footer/>  
       </Router>
-      <Footer/>
     </div>
     </>
   )

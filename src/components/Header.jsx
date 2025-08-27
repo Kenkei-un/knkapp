@@ -13,7 +13,10 @@ export default function Header(){
     return(
         <>
         <div className="header">
-        <div className="logo" onClick={()=>navigate("/")}>Keneth Mwaniki</div>
+        <div className="logo" onClick={()=>navigate("/")}>
+            <img src="/favi.png" alt="favicon" />
+            <span>Keneth Mwaniki</span>
+            </div>
         <div className="links">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/CAD">CAD</NavLink>
