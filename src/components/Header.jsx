@@ -18,21 +18,21 @@ export default function Header(){
             <span>Keneth Mwaniki</span>
             </div>
         <div className="links">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/CAD">CAD</NavLink>
-            <NavLink to="/webdev">Webdev</NavLink>
-            <NavLink to="/speaking">Speaking</NavLink>
-            <NavLink to="/resume">Resume</NavLink>
+            <NavLink to="/" className={({isActive})=>isActive? "activeLink":''}>Home</NavLink>
+            <NavLink to="/CAD" className={({isActive})=>isActive? 'activeLink':''}>CAD</NavLink>
+            <NavLink to="/webdev" className={({isActive})=>isActive? 'activeLink':''}>Webdev</NavLink>
+            <NavLink to="/speaking" className={({isActive})=>isActive? 'activeLink':''}>Speaking</NavLink>
+            <NavLink to="/resume" className={({isActive})=>isActive? 'activeLink':''}>Resume</NavLink>
         </div>
         {!hamenu&&<GiHamburgerMenu size={30} className="icon" onClick={seeMenu}/>}
         </div>
         <div className={hamenu?"hamburgerOn":"hamburgerOff"}>
             <X size={25} className="icon" onClick={seeMenu}/>
-            <NavLink to="/" onClick={seeMenu}>Home</NavLink>
-            <NavLink to="/CAD" onClick={seeMenu}>CAD</NavLink>
-            <NavLink to="/webdev" onClick={seeMenu}>Webdev</NavLink>
+            <NavLink to="/" onClick={seeMenu}className={({isActive})=>isActive? "activeLink":''}>Home</NavLink>
+            <NavLink to="/CAD" onClick={seeMenu}className={({isActive})=>isActive? "activeLink":''}>CAD</NavLink>
+            <NavLink to="/webdev" onClick={seeMenu}className={({isActive})=>isActive? "activeLink":''}>Webdev</NavLink>
             <NavLink to="/speaking" onClick={seeMenu}>Speaking</NavLink>
-            <NavLink to="/resume" onClick={seeMenu}>Resume</NavLink>
+            <NavLink to="/resume" onClick={seeMenu}className={({isActive})=>isActive? "activeLink":''}>Resume</NavLink>
         </div>
         {hamenu&& <div className="hamspace" onClick={seeMenu}></div>}
         </>

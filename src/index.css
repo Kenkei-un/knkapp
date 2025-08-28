@@ -78,23 +78,36 @@ body{
   fill: var(--brand);
   display: none;
 }
+.links .activeLink{
+  font-weight: bold;
+  border-bottom: 2px solid var(--accent1);
+}
 .hamburgerOn{
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   background-color: var(--brand);
-  align-items: end;
-  padding: 1rem;
+  align-items: start;
   gap: 1rem;
-  width: 25vw;
+  width: 30vw;
   position: fixed;
+  padding-left: 0.5rem;
   right: 0%;
   height: 100vh;
   visibility: collapse;
   transition: 0.3s;
+  z-index: 2;
 }
 .hamburgerOn a, .hamburgerOn .icon, .hamburgerOff .icon,.hamburgerOff a{
   color: var(--whitebg);
   text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 1rem;  
+}
+.hamburgerOn .activeLink{
+  font-weight: bold;
+  background-color:var(--accent1);
+  width: 80%;
 }
 .hamburgerOff{
   display: flex;
@@ -110,7 +123,7 @@ body{
   transition: 0.3s;
 }
 .hamspace{
-  width: 69vw;
+  width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
