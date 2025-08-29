@@ -382,6 +382,21 @@ button:active{
 .webdevApps .conversionBox strong{
   color: var(--whitebg);
 }
+.webdevApps .affirmationsApp{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 2px solid hsl(0, 0%, 40%);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: var(--whitebg);
+  align-items: center;
+}
+.webdevApps .affirmationsApp button{
+  width: fit-content;
+  background-color: var(--accent1);
+}
 
 /* mobile settings */
 @media(max-width: 550px){
