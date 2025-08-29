@@ -1,9 +1,11 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Slider from "./Tools/Slider";
+import UnitConverter from "./Tools/UnitConverter";
 
 export default function Webdev(){
     const projectsRef=useRef(null);
     const appsRef=useRef(null);
+    const appRef=useRef(null);
     const JDS=[
         {image:
             [
@@ -58,6 +60,12 @@ export default function Webdev(){
             text: 'Administrative features'
         },
     ];
+    const [app,setApp]=useState('');
+
+    function appChange(){
+        setApp(appRef.current.value);
+        // console.log();
+    }
     return(
         <>
         <section className="webdevIntro">
@@ -97,13 +105,18 @@ export default function Webdev(){
         </section>
         <section className="webdevApps" ref={appsRef}>
             <h2>Apps and Tools</h2>
-            Select App<select>
+            Select App<select value={app} ref={appRef} onChange={appChange}>
                 <option value=""></option>
-                <option value="Unit Converter">
+                <option value="UnitConverter">
                     Unit Converter
                 </option>
-                <option value=""></option>
+                <option value="Affirmation">Get Affirmation</option>
+                <option value="Quote">Get Random Quote</option>
             </select>
+            {app==='UnitConverter'?
+            <UnitConverter/>
+            :''
+            }
         </section>
         </>
     );
