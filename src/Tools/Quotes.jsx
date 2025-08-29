@@ -1,4 +1,5 @@
 import axios from "axios"; 
+import { useState } from "react";
 
 export default function Quotes(){
     const [quoteText, setQuoteText]=useState(null);
