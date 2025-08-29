@@ -80,7 +80,7 @@ export default function CAD(){
             <div className="CADcard">
                 <div>
                 <h3>Spoon</h3>
-                <Slider slides={spoon}/>
+                <Slider slides={spoon} source='CAD'/>
                 </div>
                 <div>
                     <strong>Skills</strong>

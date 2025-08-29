@@ -4,6 +4,7 @@
   --accent1b: hsl(142, 71%, 55%);
   --whitebg: white;
   --darkbg: black;
+  --transparent: rgb(255, 255, 255,0);
 }
 @font-face {
   font-family: inter;
@@ -304,11 +305,51 @@ button:active{
   justify-content: center;
   align-items: center;
 }
-.lightboxOn img{
-  border-radius: 0.5rem;
-}
 .lightboxOff{
   display: none;
+}
+/* Webdev Page */
+.webdevIntro,.webdevProjects, .webdevApps{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 90%);
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.webdevProjects h2, .webdevProjects h3{
+  margin: 0.5rem;
+}
+.webdevProject li, .webdevIntro li{
+  text-align: left;
+}
+.webdevProject{
+  padding: 0.5rem;
+}
+.webdevProject .carousel{
+  background-color: var(--brand);
+  color: var(--whitebg);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 90vw;
+}
+.webdevProject .carousel button{
+  padding: none;
+  background-color: var(--transparent);
+
+}
+.webdevProject .carousel .carouselImageFrame{
+  flex-grow: 1;
+  height: 100%;
+}
+.webdevProject .carousel img{
+  width: auto;
+  object-fit:contain;
+  border: 2px solid var(--brand);
 }
 
 /* mobile settings */
@@ -370,7 +411,7 @@ button:active{
   .CADcard video{
     width: 80vw;
   }
-  .carousel img{
+  .CADcard .carousel img{
     width: 80vw;
     height: 50vw;
   }
