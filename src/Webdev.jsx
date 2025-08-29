@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import Slider from "./Tools/Slider";
 import UnitConverter from "./Tools/UnitConverter";
+import Quotes from "./Tools/Quotes";
 
 export default function Webdev(){
     const projectsRef=useRef(null);
@@ -110,12 +111,13 @@ export default function Webdev(){
                 <option value="UnitConverter">
                     Unit Converter
                 </option>
-                <option value="Affirmation">Get Affirmation</option>
-                <option value="Quote">Get Random Quote</option>
+                <option value="Quote">Quotes</option>
             </select>
             {app==='UnitConverter'?
             <UnitConverter/>
-            :''
+            :app==='Quote'?
+            <Quotes/>
+            :<p>Select an app to get started</p>
             }
         </section>
         </>
