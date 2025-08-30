@@ -51,7 +51,7 @@ export default function Home(){
                 </div>
                 <div className="projectCard">
                     <h2>JDS Web</h2>
-                    
+                       <img src="/JDSscreens/Lhomepage.png" alt="jds" />        
                     <p>Features</p>
                     <ul>
                         <li>User Authentication</li>

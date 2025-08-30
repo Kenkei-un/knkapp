@@ -71,7 +71,7 @@ export default function Webdev(){
         <>
         <section className="webdevIntro">
             <h2>Tech Stack</h2>
-            <p>The projects and web apps below are built using the tech stack:
+            <p>The projects and web apps below are built using the tech stack(entirely self-taught):
                 {<br/>}HTML, CSS, Javascript, REACT, NodeJS/ExprssJS, MongoDB</p>
                 
             <div style={{display:'flex', gap:'1rem'}}>

@@ -12,7 +12,7 @@ export default function Header(){
     }
     return(
         <>
-        <div className="header">
+        <div className="header" id="hd">
         <div className="logo" onClick={()=>navigate("/")}>
             <img src="/favi.png" alt="favicon" />
             <span>Keneth Mwaniki</span>

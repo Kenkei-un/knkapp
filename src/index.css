@@ -20,8 +20,8 @@
   to{opacity: 1; transform: translateX(0);}
 }
 @keyframes skill{
-  from{opacity: 0; transform: rotateX(360deg);}
-  to{opacity: 1; transform: rotateX(0deg);}
+  from{opacity: 0;transform: rotateY(180deg);}
+  to{opacity: 1; transform: rotateY(0deg);}
 }
 @keyframes glow{
   50%{color: var(--accent1);}
@@ -253,6 +253,9 @@ button:active{
   .projectCard ul{
     flex-grow: 1;
   }
+  .projectCard img{
+    width: 100%;
+  }
 /* CAD Page */
 .CADintro{
   padding: 0.5rem;
@@ -334,6 +337,7 @@ button:active{
 .webdevProject{
   padding-left: 0;
   padding-right: 0;
+  justify-items: center;
 }
 .webdevProject .carousel{
   background-color: var(--brand);
@@ -397,7 +401,43 @@ button:active{
   width: fit-content;
   background-color: var(--accent1);
 }
-
+/* Speaking Page */
+.speakingIntro, .toastmasters, .debatePS{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.debatePS .carousel .carouselImageFrame, .toastmasters .carousel .carouselImageFrame{
+  flex-grow: 1;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.5rem;
+}
+.debatePS .carousel img, .toastmasters .carousel img{
+  width: auto;
+  object-fit:contain;
+  border: 2px solid var(--transparent);
+  flex-grow: 1;
+}
+.toastmasters .carousel, .debatePS .carousel{
+  background-color: var(--brand);
+  color: var(--whitebg);
+  padding: 0;
+  border-radius: 1rem;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 95vw;
+}
+.toastmasters .carousel button, .debatePS .carousel button{
+  padding: none;
+  background-color: var(--transparent);
+  margin: none;
+}
 /* mobile settings */
 @media(max-width: 550px){
   /* header, footer, hamburger menu */

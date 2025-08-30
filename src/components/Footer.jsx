@@ -1,4 +1,4 @@
-import { Github, Instagram, Linkedin, Mail } from "lucide-react";
+import { ArrowUp, Github, Instagram, Linkedin, Mail } from "lucide-react";
 import { BsSubstack } from "react-icons/bs";
 
 import { IoLogoWhatsapp } from "react-icons/io5";
@@ -12,5 +12,6 @@ export default function Footer(){
         <li><a href="https://github.com/Kenkei-un" target="_blank"><Github  className="icon"/></a></li>
         <li><a href="mailto: keneth.paul.mwaniki@gmail.com" target="_blank"><Mail  className="icon"/></a></li>
         <li><a href="https://btnbreaths.substack.com" target="_blank"><BsSubstack className="icon"/></a></li>
+        <li><a><ArrowUp className="icon" onClick={()=>document.getElementById('hd').scrollIntoView({behavior:'smooth'})}/></a></li>
     </div>);
 }
