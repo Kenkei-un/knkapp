@@ -2,6 +2,7 @@ import { FaDesktop } from "react-icons/fa";
 import { IoPodium } from "react-icons/io5";
 import { RxGear } from "react-icons/rx";
 import { useNavigate } from "react-router-dom";
+import Imageframe from "./Tools/Imageframe";
 
 export default function Home(){
     const navigate=useNavigate();
@@ -13,7 +14,7 @@ export default function Home(){
                 <h4>Mechanical Engineer, Web Developer, Speaker & Writer</h4>
                 <p>Solving problems through mechanical design, full stack web development and effective communication.</p>
             </div>
-            <img src="ken.jpg" alt="profile picture" />
+            <Imageframe image={"ken.jpg"}/>
         </section>
         <section className="skillCards">
             <div className="skillCard">
@@ -51,7 +52,7 @@ export default function Home(){
                 </div>
                 <div className="projectCard">
                     <h2>JDS Web</h2>
-                       <img src="/JDSscreens/Lhomepage.png" alt="jds" />        
+                       <Imageframe image={"/JDSscreens/Lhomepage.png"}/>       
                     <p>Features</p>
                     <ul>
                         <li>User Authentication</li>

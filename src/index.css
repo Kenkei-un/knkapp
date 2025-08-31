@@ -8,11 +8,11 @@
 }
 @font-face {
   font-family: inter;
-  src: url("Fonts/Inter-VariableFont_opsz\,wght.ttf");
+  src: url("/Fonts/Inter-VariableFont_opsz\,wght.ttf");
 }
 @font-face {
   font-family: roboto;
-  src: url("Fonts/Roboto-VariableFont_wdth\,wght.ttf");
+  src: url("/Fonts/Roboto-VariableFont_wdth\,wght.ttf");
 }
 /* Animation */
 @keyframes section-in{
@@ -21,7 +21,18 @@
 }
 @keyframes skill{
   from{opacity: 0;transform: rotateY(180deg);}
-  to{opacity: 1; transform: rotateY(0deg);}
+  to{opacity: 1; transform: rotateY(0deg);} 
+}
+@keyframes pageTurn{
+  from{
+    transform-origin: right;
+    transform: rotateY(90deg) scale(0.5,1) skew(0deg, 20deg);
+    opacity: 0;
+  }
+  to{
+    transform: rotateY(0deg) scale(1,1) skew(0deg, 0deg);;
+    opacity: 1;
+  }
 }
 @keyframes glow{
   50%{color: var(--accent1);}
@@ -51,29 +62,29 @@ body{
   align-items: end;
   border-bottom: 1px solid var(--brand);
   margin-bottom: 1rem;
-}
-.header .logo{
-  flex-grow: 1;
-  font-size: 1.5rem;
-  color: var(--brand);
-  font-weight: bold;
-  animation: glow 3s;
-  justify-items: center;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  cursor: pointer;
-}
-.header .logo:hover{
-  color: var(--accent1);
-}
-.header img{
-  width: 3rem;
-  height: 3rem;
-} 
-.header .links{
-  display: flex;
-  gap: 1rem;
+    .logo{
+    flex-grow: 1;
+    font-size: 1.5rem;
+    color: var(--brand);
+    font-weight: bold;
+    animation: glow 3s;
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    :hover{
+      color: var(--accent1);
+    }
+    }
+    img{
+    width: 3rem;
+    height: 3rem;
+    }
+    .links{
+    display: flex;
+    gap: 1rem;
+    }
 }
 .header a{
   text-decoration: none;
@@ -191,10 +202,13 @@ button:active{
   justify-content: center;
 }
 .intro img{
-  width: 40%;
+  width: 100%;
   max-width: 300px;
   border: 1px solid hsl(0, 0%, 40%);
   border-radius: 10%;
+}
+.frame img{
+  animation: sliding 1s;
 }
 .skillCards{
   display: flex;
@@ -214,7 +228,7 @@ button:active{
   max-width: 350px;
   text-align: center;
   box-sizing: border-box;
-  animation: skill 5s;
+  animation: pageTurn 5s;
 }
 .skillCard p{
   flex-grow: 1;
@@ -438,6 +452,8 @@ button:active{
   background-color: var(--transparent);
   margin: none;
 }
+/* Resume Page */
+
 /* mobile settings */
 @media(max-width: 550px){
   /* header, footer, hamburger menu */

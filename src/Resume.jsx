@@ -1,5 +1,8 @@
 export default function Resume(){
     return(<>
-    <p>Resume</p>
+    <section className="resumeIntro">
+        <p>Below is a complete timeline of my work experience</p>
+        <button>Download resume</button>
+    </section>
     </>);
 }
