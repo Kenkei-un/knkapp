@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import Imageframe from "./Tools/Imageframe";
 
 export default function Resume(){
     const [cat, setCat]=useState('General');
@@ -12,31 +13,48 @@ export default function Resume(){
         return(
             <>
             <div className="CVIntro">
-                <h3>Profile</h3>
+                <h2>Profile</h2>
                 <p>I am a graduate Mechanical Engineer with strong foundations in 3D modelling and HVAC systems with keen interest in MEP services. I'm additionally a full-stack developer and public speaker. I have a passion for solving real-world problems through mechanical design, intuitive web platforms and community engagement. </p>
             </div>
+            <h2>Skills</h2>
             <div className="skills">
-                <h3>Skills</h3>
-                <p><b>Technical Skills</b></p>
-                <ul>
-                    <li>3D modelling in SOLIDWORKS and AutoDesk Inventor
-                    </li>
-                    <li>Lathe Operations: Tanning, Boring, Threading, Facing</li>
-                    <li>2D CAD drawing in AutoCAD</li>
-                    <li>HVAC load calculations and equipment selection</li>
-                    <li>Microsoft Office: Ms Word, Ms Excel, Ms Access, Ms Publisher, Ms Powerpoint </li>
-                    <li>Full Stack web development through HTML,CSS, Javascript, REACT, NodeJS/ExpressJS and MongoDB</li>
-                    <li>Java OOP</li>
-                    <li><b>Languages:</b> English (C2), Spanish (A2)</li>
-                </ul>
-                <p><b>Soft Skills</b></p>
-                <ul>
-                    <li>Public Speaking</li>
-                    <li>Leadership</li>
-                    <li>Debating</li>
-                </ul>
+                <div className="cvCard">
+                    <p><b>Engineering Skills</b></p>
+                    <ul>
+                        <li>SOLIDWORKS</li>
+                        <li>AutoDesk Inventor</li>
+                        <li>AutoCAD</li>
+                        <li>Lathe Operations</li>
+                        <li>HVAC load calculations</li>
+                        <li>Arc Welding</li>
+                    </ul>
+                </div>
+                <div className="cvCard">
+                    <p><b>Tech Skills</b></p>
+                    <ul>
+                        <li>Microsoft Office</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>REACT</li>
+                        <li>NodeJS</li>
+                        <li>ExpressJS</li>
+                        <li>MongoDB</li>
+                        <li>Java OOP</li>
+                    </ul>
+                </div>
+                <div className="cvCard">
+                    <p><b>Soft Skills</b></p>
+                    <ul>
+                        <li>Public Speaking</li>
+                        <li>Leadership</li>
+                        <li>Debating</li>
+                        <li>English (C2)</li>
+                        <li>Spanish (A2)</li>
+                    </ul>
+                </div>
             </div>
-            <div className="CVeperience">
+            <div className="CVexperience">
                 <h3>Work Experience</h3>
                 <div className="xpCard">
                     <p>Jan 2024-March 2024</p>
@@ -77,16 +95,16 @@ export default function Resume(){
                     </div>
                 <p>Feb 2019-June 2019</p>
                 <div>
-                    <b>Queen's Cyber Cafe</b>
-                    <p>Taught the microsoft office suite (Computer Packages): Ms Word, Ms Excel, Ms Access, Ms Publisher, Ms Powerpoint</p>
+                    <b>Queen's Cyber Cafe</b><br />
+                    <p style={{fontWeight:'normal',border:'none'}}>Taught the microsoft office suite (Computer Packages): Ms Word, Ms Excel, Ms Access, Ms Publisher, Ms Powerpoint</p>
                 </div>
                 </div>
                 
             </div>
+            <h3>Education and Training</h3>
             <div className="education">
-                <h3>Education and Training</h3>
-                <div>
-                    <b>Bsc. Mechanical Engineering</b>
+                <div className="educard">
+                    <p>Bsc. Mechanical Engineering</p>
                     <ul>
                         <li>Attended Jomo Kenyatta University of Agriculture and Technology</li>
                         <li>Joined Sep 2019</li>
@@ -95,16 +113,16 @@ export default function Resume(){
                         <li><b>Distinction: </b>Second Class Upper</li>
                     </ul>
                 </div>
-                <div>
-                    <b>Web Development</b>
+                <div className="educard">
+                    <p>Web Development</p>
                     <ul>
                         <li>Started Feb 2025</li>
                         <li>Self study through Freecodecamp and youtube</li>
-                        <li>Learned:<b> HTML,CSS, Javascript, REACT, NodeJS/ExpressJS, MongoDB</b></li>
+                        <li>Learned: HTML,CSS, Javascript, REACT, NodeJS/ExpressJS, MongoDB </li>
                     </ul>
                 </div>
-                <div>
-                    <b>Kenya Certificate of Secondary Education</b>
+                <div className="educard">
+                    <p>Kenya Certificate of Secondary Education</p>
                     <ul>
                         <li>Attended Nairobi School</li>
                         <li>Joined Jan 2015</li>
@@ -112,8 +130,8 @@ export default function Resume(){
                         <li><b>Grade: </b>A-</li>
                     </ul>
                 </div>
-                <div>
-                    <b>Kenya Certificate of Primary Education</b>
+                <div className="educard">
+                    <p>Kenya Certificate of Primary Education</p>
                     <ul>
                         <li>Attended Isegeretoto School</li>
                         <li>Joined Jan 2012</li>
@@ -132,26 +150,39 @@ export default function Resume(){
                 <h3>Profile</h3>
                 <p>I am a graduate Mechanical Engineer with strong foundations in 3D modelling and HVAC systems with keen interest in MEP services. I have a passion for solving real-world problems through mechanical design, efficient communication and collaborations.</p>
             </div>
+            <h2>Skills</h2>
             <div className="skills">
-                <h3>Skills</h3>
-                <p><b>Technical Skills</b></p>
-                <ul>
-                    <li>3D modelling in SOLIDWORKS and AutoDesk Inventor
-                    </li>
-                    <li>Lathe Operations: Tanning, Boring, Threading, Facing</li>
-                    <li>2D CAD drawing in AutoCAD</li>
-                    <li>HVAC load calculations and equipment selection</li>
-                    <li>Microsoft Office: Ms Word, Ms Excel, Ms Access, Ms Publisher, Ms Powerpoint </li>
-                    <li><b>Languages:</b> English (C2), Spanish (A2)</li>
-                </ul>
-                <p><b>Soft Skills</b></p>
-                <ul>
-                    <li>Public Speaking</li>
-                    <li>Leadership</li>
-                    <li>Debating</li>
-                </ul>
+                <div className="cvCard">
+                    <p><b>Engineering Skills</b></p>
+                    <ul>
+                        <li>SOLIDWORKS</li>
+                        <li>AutoDesk Inventor</li>
+                        <li>AutoCAD</li>
+                        <li>Lathe Operations</li>
+                        <li>HVAC load calculations</li>
+                        <li>Arc Welding</li>
+                    </ul>
+                </div>
+                <div className="cvCard">
+                    <p><b>Tech Skills</b></p>
+                    <ul>
+                        <li>Microsoft Office</li>
+                        <li>MERN stack web development</li>
+                        <li>Java OOP</li>
+                    </ul>
+                </div>
+                <div className="cvCard">
+                    <p><b>Soft Skills</b></p>
+                    <ul>
+                        <li>Public Speaking</li>
+                        <li>Leadership</li>
+                        <li>Debating</li>
+                        <li>English (C2)</li>
+                        <li>Spanish (A2)</li>
+                    </ul>
+                </div>
             </div>
-            <div className="CVeperience">
+            <div className="CVexperience">
                 <h3>Work Experience</h3>
                 <div className="xpCard">
                     <p>Jan 2024-March 2024</p>
@@ -192,10 +223,10 @@ export default function Resume(){
                     </div>
                 </div>
             </div>
+            <h3>Education and Training</h3>
             <div className="education">
-                <h3>Education and Training</h3>
-                <div>
-                    <b>Bsc. Mechanical Engineering</b>
+                <div className="educard">
+                    <p>Bsc. Mechanical Engineering</p>
                     <ul>
                         <li>Attended Jomo Kenyatta University of Agriculture and Technology</li>
                         <li>Joined Sep 2019</li>
@@ -204,8 +235,8 @@ export default function Resume(){
                         <li><b>Distinction: </b>Second Class Upper</li>
                     </ul>
                 </div>
-                <div>
-                    <b>Kenya Certificate of Secondary Education</b>
+                <div className="educard">
+                    <p>Kenya Certificate of Secondary Education</p>
                     <ul>
                         <li>Attended Nairobi School</li>
                         <li>Joined Jan 2015</li>
@@ -213,8 +244,8 @@ export default function Resume(){
                         <li><b>Grade: </b>A-</li>
                     </ul>
                 </div>
-                <div>
-                    <b>Kenya Certificate of Primary Education</b>
+                <div className="educard">
+                    <p>Kenya Certificate of Primary Education</p>
                     <ul>
                         <li>Attended Isegeretoto School</li>
                         <li>Joined Jan 2012</li>
@@ -233,42 +264,71 @@ export default function Resume(){
                 <h3>Profile</h3>
                 <p>I am a self-taught full-stack developer with a background in mechanical engineering. I have a passion for building intuitive, impactful web platforms. Skilled in MERN stack development, UI/UX design and deploying scalable applications. </p>
             </div>
+            <h3>Skills</h3>
             <div className="skills">
-                <h3>Skills</h3>
-                <p><b>Technical Skills</b></p>
-                <ul>
-                    <li>Full Stack web development through HTML,CSS, Javascript, REACT, NodeJS/ExpressJS and MongoDB</li>
-                    <li>Java OOP</li>
-                    <li><b>Tools:</b> Git, Github, Netlify, Render, VS Code, Cloudinary</li>
-                    <li>Microsoft Office: Ms Word, Ms Excel, Ms Access, Ms Publisher, Ms Powerpoint </li>
-                    <li><b>Languages:</b> English (C2), Spanish (A2)</li>
-                </ul>
-                <p><b>Soft Skills</b></p>
-                <ul>
-                    <li>Public Speaking</li>
-                    <li>Leadership</li>
-                    <li>Debating</li>
-                </ul>
+                <div className="cvCard">
+                    <p><b>Tech Skills</b></p>
+                    <ul>
+                        <li>Microsoft Office</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>REACT</li>
+                        <li>NodeJS</li>
+                        <li>ExpressJS</li>
+                        <li>MongoDB</li>
+                        <li>Java OOP</li>
+                    </ul>
+                </div>
+                <div className="cvCard">
+                    <p><b>Tools</b></p>
+                    <ul>
+                        <li>Github</li>
+                        <li>VS Code</li>
+                        <li>Netlify</li>
+                        <li>Render</li>
+                        <li>Cloudinary</li>
+                    </ul>
+                </div>
+                <div className="cvCard">
+                    <p><b>Soft Skills</b></p>
+                    <ul>
+                        <li>Public Speaking</li>
+                        <li>Leadership</li>
+                        <li>Debating</li>
+                        <li>English C2</li>
+                        <li>Spanish A2</li>
+                    </ul>
+                </div>
             </div>
-            <div className="CVeperience">
+            <div className="CVexperience">
                 <h3>Projects</h3>
                 <div className="xpCard">
-                    <p>2025</p>
+                    <p>Debate Club Website</p>
                     <div>
-                       <b>Freelance web developer- Remote</b>
                        <ul>
                         <li>Built and deployed a dynamic full stack website for the JKUAT Debate Society on Netlify and Render</li>
-                        <li>Built fully responsive website to serve as my engineering, speaking and webdev portfolio</li>
                        </ul>
-                    </div>
-                                       
+                       <div style={{display:'flex', alignItems:'center'}}>
+                            <a href="https://jdsweb.netlify.app" target="_blank"><button>Visit Website</button></a>
+                            <a href="https://github.com/JkuatDebates/jds-app" target="_blank"><button>View Github Frontend Repo</button></a>
+                            <a href="https://github.com/JkuatDebates/JDSserver" target="_blank"><button>View Backend Repo</button></a>
+                        </div> 
+                    </div>                 
+                </div>
+                <div className="xpCard">
+                    <p>Portfolio Website</p>
+                       <ul>
+                        <li>Built fully responsive website to serve as my engineering, speaking and webdev portfolio</li>
+                        <li>Deployed on netlify</li>
+                       </ul>                  
                 </div>
                 
             </div>
+            <h3>Education and Training</h3>
             <div className="education">
-                <h3>Education and Training</h3>
-                <div>
-                    <b>Bsc. Mechanical Engineering</b>
+                <div className="educard">
+                    <p>Bsc. Mechanical Engineering</p>
                     <ul>
                         <li>Attended Jomo Kenyatta University of Agriculture and Technology</li>
                         <li>Joined Sep 2019</li>
@@ -276,16 +336,16 @@ export default function Resume(){
                         <li><b>Distinction: </b>Second Class Upper</li>
                     </ul>
                 </div>
-                <div>
-                    <b>Web Development</b>
+                <div className="educard">
+                    <p>Web Development</p>
                     <ul>
                         <li>Started Feb 2025</li>
                         <li>Self study through Freecodecamp and youtube</li>
-                        <li>Learned:<b> HTML,CSS, Javascript, REACT, NodeJS/ExpressJS, MongoDB</b></li>
+                        <li>Learned: HTML,CSS, Javascript, REACT, NodeJS/ExpressJS, MongoDB</li>
                     </ul>
                 </div>
-                <div>
-                    <b>Kenya Certificate of Secondary Education</b>
+                <div className="educard">
+                    <p>Kenya Certificate of Secondary Education</p>
                     <ul>
                         <li>Attended Nairobi School</li>
                         <li>Joined Jan 2015</li>
@@ -293,8 +353,8 @@ export default function Resume(){
                         <li><b>Grade: </b>A-</li>
                     </ul>
                 </div>
-                <div>
-                    <b>Kenya Certificate of Primary Education</b>
+                <div className="educard">
+                    <p>Kenya Certificate of Primary Education</p>
                     <ul>
                         <li>Attended Isegeretoto School</li>
                         <li>Joined Jan 2012</li>
@@ -307,18 +367,26 @@ export default function Resume(){
         );
     }
     return(<>
-    <section className="resumeIntro">
-                <h2 style={{lineHeight:'0'}}>Keneth Paul Mwaniki</h2>
-                <p>Mechanical Engineer | Web dev| Speaker</p>
-        <label>Filter 
-            <select value={cat} ref={catRef} onChange={catChange}>
-                {cats.map((c,i)=>
-                <option key={i} value={c}>
-                    {c}
-                </option>)}
-            </select>
-        </label>
-        <button>Download resume</button>
+    <label style={{alignSelf:'center'}}>Filter 
+        <select value={cat} ref={catRef} onChange={catChange}>
+            {cats.map((c,i)=>
+            <option key={i} value={c}>
+                {c}
+            </option>)}
+        </select>
+    </label>
+    <section className="resumeIntro">  
+        
+        <div className="dp">
+            <Imageframe image={'/ken.jpg'}/>
+            <div className="dp2">
+                <div>
+                    <h2 style={{lineHeight:'0', fontWeight:'bold',fontSize:'1.5rem'}}>Keneth Paul Mwaniki</h2>
+                    <p className="names">{cat!=='Webdev'?'Mechanical Engineer | Web dev | Speaker':'Web developer | Speaker'}</p>
+                </div>
+                <a href={cat==='General'?"/KenethMwanikiCV.pdf":cat==='Engineering'?"/KenethMwanikiCVEng.pdf":"/KenethMwanikiCVDev.pdf"} download={cat==='General'?"KenethMwanikiCV.pdf":cat==='Engineering'?"KenethMwanikiCVEng.pdf":"KenethMwanikiCVDev.pdf"}><button>Download</button></a>
+            </div>
+        </div>
     </section>
     <section className="resume">
         {cat==='General'? generalCV():cat==='Engineering'? engCV(): webdevCV()}
