@@ -367,7 +367,7 @@ export default function Resume(){
         );
     }
     return(<>
-    <label style={{alignSelf:'center'}}>Filter 
+    <label style={{display:'flex',alignItems:'center', gap:'1rem', justifySelf:'center'}}>Filter:
         <select value={cat} ref={catRef} onChange={catChange}>
             {cats.map((c,i)=>
             <option key={i} value={c}>

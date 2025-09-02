@@ -61,6 +61,48 @@ export default function Webdev(){
             text: 'Administrative features'
         },
     ];
+    const port=[
+        {
+            image:
+            [
+                '/Portfolio/Lhome.png',
+                '/Portfolio/Mhome.png',
+            ],
+            text: 'Home Page'
+        },
+        {
+            image:
+            [
+                '/Portfolio/Lcad.png',
+                '/Portfolio/Mcad.png'
+            ],
+            text: 'CAD portfolio'
+        },
+        {
+            image:
+            [
+                '/Portfolio/Ldev.png',
+                '/Portfolio/Mdev.png',
+            ],
+            text: 'Dev portfolio'
+        },
+        {
+            image:
+            [
+                '/Portfolio/Quotes.png',
+                '/Portfolio/UnitConverter.png'
+            ],
+            text:'Web apps'
+        },
+        {
+            image:
+            [
+                '/Portfolio/Lspeak.png',
+                '/Portfolio/Lresume.png'
+            ],
+            text:'Public speaking portfolio and online resume page'
+        }
+    ];
     const [app,setApp]=useState('');
 
     function appChange(){
@@ -101,6 +143,20 @@ export default function Webdev(){
                     <a href="https://github.com/JkuatDebates/jds-app" target="_blank"><button>View Github Frontend Repo</button></a>
                     <a href="https://github.com/JkuatDebates/JDSserver" target="_blank"><button>View Backend Repo</button></a>
                     
+                </div>
+            </div>
+            <div className="webdevProject">
+                <h3>This Portfolio</h3>
+                <Slider source='' slides={port}/>
+                <p>A site meant to showcase my various skills</p>
+                <ul>
+                    <strong>Unique Features I'm proud of</strong>
+                    <li>Custom image slider</li>
+                    <li>Custom lightbox functionality</li>
+                    <li>Assorted web apps build into the dev page (With more to be added in future)</li>
+                </ul>
+                <div style={{display:'flex', gap:'1rem', justifyContent:'center'}}>
+                    <a href="https://github.com/Kenkei-un/knkapp" target="_blank"><button>View Github Repo</button></a>
                 </div>
             </div>
         </section>
