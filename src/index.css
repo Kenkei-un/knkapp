@@ -42,6 +42,13 @@
   from{opacity: 0; scale: 0;}
   to{opacity: 1; scale: 1;}
 }
+@keyframes typing{
+  from{width: 0;}
+  to{width: 100%;}
+}
+@keyframes blink{
+  50%{ border-color: transparent;}
+}
 section{
   animation: section-in 1.5s;
 }
@@ -213,6 +220,18 @@ button:active{
   max-width: 300px;
   border: 1px solid hsl(0, 0%, 40%);
   border-radius: 10%;
+}
+.intro h1{
+  /* hide parts unrevealed */
+  overflow: hidden;
+  /* border to act as cursor */
+  border-right: 1px solid;
+  /* Keep it all in one line */
+  white-space: nowrap;
+  display: block;
+  margin: 0;
+  max-width: fit-content;
+  animation: typing 5s steps(15) forwards, blink 1s step-end infinite;
 }
 .frame img{
   animation: sliding 1s;
