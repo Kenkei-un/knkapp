@@ -99,7 +99,7 @@ export default function CAD(){
                     </ul>
                 </div>
             </div>
-            <div className="CADcard">
+            {/* <div className="CADcard">
                 <div>
                 <h3>Furniture</h3>
                 <Slider slides={furniture} source='CAD'/>
@@ -113,7 +113,7 @@ export default function CAD(){
                         <li>Adding Material</li>
                     </ul>
                 </div>
-            </div>
+            </div> */}
             <div className="CADcard">
                 <div>
                 <h3>Spoon</h3>
