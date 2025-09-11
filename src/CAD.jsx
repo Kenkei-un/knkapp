@@ -6,12 +6,12 @@ export default function CAD(){
         {image:'/projects/realSpoon.jpg', text:'Real Spoon'},
         {image:'/projects/spoon2D.JPG', text:'2D Drawing'}
     ];
-    const furniture=[
-        {image:"/projects/Furniture/Sofa.JPG", text:'Sofa'},
-        {image:"/projects/Furniture/Brass ringed table.JPG", text:'Table 1'},
-        {image:"/projects/Furniture/Screw table.JPG", text:'Table 2'},
-        {image:"/projects/Furniture/Table Assembly.JPG", text:'Table 3'},
-    ]
+    // const furniture=[
+    //     {image:"/projects/Furniture/Sofa.JPG", text:'Sofa'},
+    //     {image:"/projects/Furniture/Brass ringed table.JPG", text:'Table 1'},
+    //     {image:"/projects/Furniture/Screw table.JPG", text:'Table 2'},
+    //     {image:"/projects/Furniture/Table Assembly.JPG", text:'Table 3'},
+    // ]
     return(
         <>
         <section className="CADintro">
@@ -33,6 +33,21 @@ export default function CAD(){
                         <li>Motion Study</li>
                     </ul>
                     <p>Inspired by Youtube shorts</p>
+                </div>
+            </div>
+            <div className="CADcard">
+                <div>
+                <h3>Park bench-chair convertible</h3>
+                <video src="/projects/Benchvertible.mp4" controls></video>
+                </div>
+                <div>
+                    <strong>Skills</strong>
+                    <ul>
+                        <li>Reverse Engineering</li>
+                        <li>Assembly with mates</li>
+                        <li>Motion Study</li>
+                    </ul>
+                    <p>Inspired by an instagram reel</p>
                 </div>
             </div>
             <div className="CADcard">
